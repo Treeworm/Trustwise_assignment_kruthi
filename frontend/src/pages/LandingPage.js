@@ -27,10 +27,10 @@ function AnalyzePage() {
 
             const data = await res.json();
             setResponse(data);
-            toast.success("Text analyzed successfully!");
+            toast.success("hurray! the text's analyzed");
         } catch (error) {
             console.error("Error submitting text:", error);
-            toast.error("Failed to analyze text. Please try again.");
+            toast.error("Oops!failed to analyze. Please try again.");
         } finally {
             setLoading(false);
         }
