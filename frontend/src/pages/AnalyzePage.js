@@ -30,7 +30,7 @@ function AnalyzePage() {
     useEffect(() => {
         const fetchHistory = async () => {
             try {
-                const res = await fetch("http://localhost:5000/api/history");
+                const res = await fetch("http://localhost:5001/api/history");
                 const data = await res.json();
                 setHistory(data);
                 setFilteredHistory(data);
